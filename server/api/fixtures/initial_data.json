@@ -1,0 +1,249 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "john.doe",
+            "first_name": "John",
+            "last_name": "Doe",
+            "email": "john.doe@example.com",
+            "password": "pbkdf2_sha256$600000$hashed_password_here",
+            "is_active": true,
+            "date_joined": "2025-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "username": "jane.smith",
+            "first_name": "Jane",
+            "last_name": "Smith",
+            "email": "jane.smith@example.com",
+            "password": "pbkdf2_sha256$600000$hashed_password_here",
+            "is_active": true,
+            "date_joined": "2025-01-02T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "username": "bob.wilson",
+            "first_name": "Bob",
+            "last_name": "Wilson",
+            "email": "bob.wilson@example.com",
+            "password": "pbkdf2_sha256$600000$hashed_password_here",
+            "is_active": true,
+            "date_joined": "2025-01-03T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "username": "alice.johnson",
+            "first_name": "Alice",
+            "last_name": "Johnson",
+            "email": "alice.johnson@example.com",
+            "password": "pbkdf2_sha256$600000$hashed_password_here",
+            "is_active": true,
+            "date_joined": "2025-01-04T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.organization",
+        "pk": 1,
+        "fields": {
+            "name": "Tech Innovators Inc.",
+            "description": "Leading technology innovation company",
+            "address": "123 Tech Street, Silicon Valley, CA",
+            "created_at": "2025-01-01T00:00:00Z",
+            "updated_at": "2025-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.organization",
+        "pk": 2,
+        "fields": {
+            "name": "Digital Solutions Ltd.",
+            "description": "Digital transformation consultancy",
+            "address": "456 Digital Avenue, New York, NY",
+            "created_at": "2025-01-01T00:00:00Z",
+            "updated_at": "2025-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "organization": 1,
+            "employee_type": "full_time",
+            "department": "Engineering",
+            "position": "Senior Developer",
+            "joining_date": "2025-01-01",
+            "is_active": true,
+            "created_at": "2025-01-01T00:00:00Z",
+            "updated_at": "2025-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "organization": 1,
+            "employee_type": "intern",
+            "department": "Engineering",
+            "position": "Junior Developer",
+            "joining_date": "2025-01-02",
+            "is_active": true,
+            "created_at": "2025-01-02T00:00:00Z",
+            "updated_at": "2025-01-02T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "organization": 2,
+            "employee_type": "full_time",
+            "department": "Design",
+            "position": "UI/UX Designer",
+            "joining_date": "2025-01-03",
+            "is_active": true,
+            "created_at": "2025-01-03T00:00:00Z",
+            "updated_at": "2025-01-03T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.employee",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "organization": 2,
+            "employee_type": "intern",
+            "department": "Marketing",
+            "position": "Marketing Intern",
+            "joining_date": "2025-01-04",
+            "is_active": true,
+            "created_at": "2025-01-04T00:00:00Z",
+            "updated_at": "2025-01-04T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.assignment",
+        "pk": 1,
+        "fields": {
+            "title": "Develop New API Features",
+            "description": "Implement REST API endpoints for the new client portal",
+            "organization": 1,
+            "deadline": "2025-03-01T00:00:00Z",
+            "status": "in_progress",
+            "created_at": "2025-01-15T00:00:00Z",
+            "updated_at": "2025-01-15T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.assignment",
+        "pk": 2,
+        "fields": {
+            "title": "Mobile App UI Design",
+            "description": "Create UI/UX design for the new mobile application",
+            "organization": 2,
+            "deadline": "2025-02-28T00:00:00Z",
+            "status": "pending",
+            "created_at": "2025-01-16T00:00:00Z",
+            "updated_at": "2025-01-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.assignment",
+        "pk": 3,
+        "fields": {
+            "title": "Database Optimization",
+            "description": "Optimize database queries for better performance",
+            "organization": 1,
+            "deadline": "2025-02-15T00:00:00Z",
+            "status": "completed",
+            "created_at": "2025-01-17T00:00:00Z",
+            "updated_at": "2025-01-17T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.assignment",
+        "pk": 4,
+        "fields": {
+            "title": "Marketing Campaign",
+            "description": "Plan and execute Q1 marketing campaign",
+            "organization": 2,
+            "deadline": "2025-03-31T00:00:00Z",
+            "status": "in_progress",
+            "created_at": "2025-01-18T00:00:00Z",
+            "updated_at": "2025-01-18T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.assignment",
+        "pk": 5,
+        "fields": {
+            "title": "Code Documentation",
+            "description": "Update API documentation and code comments",
+            "organization": 1,
+            "deadline": "2025-02-20T00:00:00Z",
+            "status": "pending",
+            "created_at": "2025-01-19T00:00:00Z",
+            "updated_at": "2025-01-19T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.employeeassignment",
+        "pk": 1,
+        "fields": {
+            "employee": 1,
+            "assignment": 1,
+            "start_time": "2025-01-15T09:00:00Z",
+            "end_time": null,
+            "duration": null,
+            "evaluation_score": null,
+            "evaluation_comments": "",
+            "is_completed": false,
+            "created_at": "2025-01-15T09:00:00Z",
+            "updated_at": "2025-01-15T09:00:00Z"
+        }
+    },
+    {
+        "model": "api.employeeassignment",
+        "pk": 2,
+        "fields": {
+            "employee": 2,
+            "assignment": 1,
+            "start_time": "2025-01-15T09:00:00Z",
+            "end_time": null,
+            "duration": null,
+            "evaluation_score": null,
+            "evaluation_comments": "",
+            "is_completed": false,
+            "created_at": "2025-01-15T09:00:00Z",
+            "updated_at": "2025-01-15T09:00:00Z"
+        }
+    },
+    {
+        "model": "api.employeeassignment",
+        "pk": 3,
+        "fields": {
+            "employee": 3,
+            "assignment": 2,
+            "start_time": "2025-01-16T10:00:00Z",
+            "end_time": null,
+            "duration": null,
+            "evaluation_score": null,
+            "evaluation_comments": "",
+            "is_completed": false,
+            "created_at": "2025-01-16T10:00:00Z",
+            "updated_at": "2025-01-16T10:00:00Z"
+        }
+    }
+]
